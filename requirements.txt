@@ -1,0 +1,13 @@
+aiogram>=3.13.0
+sqlalchemy[asyncio]>=2.0
+alembic>=1.14
+asyncpg>=0.29
+redis>=5.0
+pytonconnect==0.3.2
+python-dotenv>=1.0
+qrcode[pil]>=7.4
+Pillow>=10.0
+loguru>=0.7
+pydantic>=2.4,<2.9
+pydantic-settings>=2.0
+cryptography>=42.0
