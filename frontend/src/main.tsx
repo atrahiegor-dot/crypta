@@ -17,7 +17,7 @@ const queryClient = new QueryClient({
 
 const MANIFEST_URL =
   import.meta.env.VITE_MANIFEST_URL ||
-  'http://localhost:8080/tonconnect-manifest.json'
+  'https://frontend-yegor121.vercel.app/tonconnect-manifest.json'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
