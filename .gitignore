@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.db
+uploads/
+*.log
+.env
+node_modules/
+frontend/dist/
+ngrok.exe
+ngrok.zip
+cloudflared.exe
+*.zip
+.DS_Store

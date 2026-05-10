@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip --version)",
+      "Bash(dir /b)",
+      "Bash(docker --version)",
+      "Bash(docker compose *)",
+      "Bash(pip install *)",
+      "Bash(pip index *)",
+      "Bash(pip list *)",
+      "Bash(python -c ' *)",
+      "Bash(pg_isready)",
+      "Bash(redis-cli ping *)",
+      "Bash(python -m bot.main)",
+      "Bash(pkill -f \"bot.main\")",
+      "Bash(taskkill /F /FI \"WINDOWTITLE eq bot.main\")",
+      "Bash(taskkill /F /IM python.exe /FI \"COMMANDLINE eq *bot.main*\")",
+      "PowerShell(Stop-Process -Force)",
+      "Bash(ls \"C:\\\\Users\\\\Yegor\\\\OneDrive\\\\Рабочий стол\\\\\")",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
+    ]
+  }
+}
