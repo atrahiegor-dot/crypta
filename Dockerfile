@@ -13,4 +13,8 @@ COPY . .
 
 RUN mkdir -p logs
 
+<<<<<<< HEAD
 CMD ["python", "-m", "bot.main"]
+=======
+CMD ["sh", "-c", "uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+>>>>>>> dca578408c1ff45c1b18f8b91ce36fccb8b582ec
