@@ -1,5 +1,8 @@
 {
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/api/:path*", "destination": "BACKEND_URL_PLACEHOLDER/api/:path*" }
+    { "source": "/api/:path*", "destination": "https://tasker-api.onrender.com/api/:path*" }
   ]
 }
