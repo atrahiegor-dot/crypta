@@ -16,6 +16,7 @@ export default function App() {
   }
 
   if (!isAuthenticated) {
+    const debug = (window as any).__authDebug || ''
     return (
       <div className="fixed inset-0 flex flex-col items-center justify-center px-8 text-center"
         style={{ background: 'var(--bg)' }}>
@@ -33,6 +34,11 @@ export default function App() {
           Это Telegram Mini App. Откройте его через бота{' '}
           <span style={{ color: 'var(--accent)' }}>@Tasker8_bot</span>
         </p>
+        {debug && (
+          <p style={{ color: '#FF6B6B', fontSize: 11, marginTop: 16, wordBreak: 'break-all', maxWidth: 300 }}>
+            {debug}
+          </p>
+        )}
       </div>
     )
   }
