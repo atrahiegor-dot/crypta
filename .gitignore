@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-venv/
-.env
-__pycache__/
-*.pyc
-.idea/
-.vscode/
-dist/
-build/
 
-node_modules/
-.next/
-=======
 __pycache__/
 *.py[cod]
 .venv/
@@ -26,4 +14,4 @@ ngrok.zip
 cloudflared.exe
 *.zip
 .DS_Store
->>>>>>> dca578408c1ff45c1b18f8b91ce36fccb8b582ec
+

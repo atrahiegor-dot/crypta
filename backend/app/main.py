@@ -14,20 +14,12 @@ if _env_path.exists():
     from dotenv import load_dotenv
     load_dotenv(str(_env_path), override=False)
 
-<<<<<<< HEAD
-=======
 from contextlib import asynccontextmanager
->>>>>>> dca578408c1ff45c1b18f8b91ce36fccb8b582ec
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from .config import settings
-<<<<<<< HEAD
-from .routers import auth, leaderboard, moderation, profile, tasks, wallet
-
-app = FastAPI(
-=======
 from .database import engine
 from .routers import auth, leaderboard, moderation, profile, tasks, wallet
 from bot.database.models import Base
@@ -43,7 +35,6 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     lifespan=lifespan,
->>>>>>> dca578408c1ff45c1b18f8b91ce36fccb8b582ec
     title="Tasker API",
     version="1.0.0",
     description="Backend API for Tasker Telegram Mini App",

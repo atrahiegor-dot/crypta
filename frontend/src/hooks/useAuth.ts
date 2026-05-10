@@ -21,12 +21,9 @@ export function useAuth() {
 
         const initData = webapp?.initData || ''
 
-<<<<<<< HEAD
-=======
         // Debug: log initData presence
         console.log('[Auth] initData length:', initData.length, '| hasWebapp:', !!webapp)
 
->>>>>>> dca578408c1ff45c1b18f8b91ce36fccb8b582ec
         if (initData) {
           // Running inside Telegram — authenticate via initData
           const newToken = await authTelegram(initData)
@@ -63,18 +60,12 @@ export function useAuth() {
           }
         }
 
-<<<<<<< HEAD
-        setLoading(false)
-      } catch (err) {
-        console.error('[Auth] Error:', err)
-=======
         // Store debug info for display
         ;(window as any).__authDebug = `no initData, no token. webapp=${!!webapp}`
         setLoading(false)
       } catch (err: any) {
         console.error('[Auth] Error:', err)
         ;(window as any).__authDebug = `error: ${err?.response?.data?.detail || err?.message || String(err)}`
->>>>>>> dca578408c1ff45c1b18f8b91ce36fccb8b582ec
         setLoading(false)
       }
     }
